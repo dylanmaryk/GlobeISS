@@ -104,9 +104,9 @@
 		359B99CF245DE9AF00962099 /* GlobeISS WatchKit App */ = {
 			isa = PBXGroup;
 			children = (
-				359B99D0245DE9AF00962099 /* Interface.storyboard */,
 				359B99D3245DE9B000962099 /* Assets.xcassets */,
 				359B99D5245DE9B000962099 /* Info.plist */,
+				359B99D0245DE9AF00962099 /* Interface.storyboard */,
 			);
 			path = "GlobeISS WatchKit App";
 			sourceTree = "<group>";
@@ -114,10 +114,10 @@
 		359B99DE245DE9B000962099 /* GlobeISS WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				359B99DF245DE9B000962099 /* InterfaceController.swift */,
-				359B99E1245DE9B000962099 /* ExtensionDelegate.swift */,
 				359B99E3245DE9B000962099 /* Assets.xcassets */,
+				359B99E1245DE9B000962099 /* ExtensionDelegate.swift */,
 				359B99E5245DE9B000962099 /* Info.plist */,
+				359B99DF245DE9B000962099 /* InterfaceController.swift */,
 			);
 			path = "GlobeISS WatchKit Extension";
 			sourceTree = "<group>";
@@ -184,7 +184,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
-				ORGANIZATIONNAME = dylanmaryk;
+				ORGANIZATIONNAME = "Dylan Maryk";
 				TargetAttributes = {
 					359B99C6245DE9AF00962099 = {
 						CreatedOnToolsVersion = 11.4;
