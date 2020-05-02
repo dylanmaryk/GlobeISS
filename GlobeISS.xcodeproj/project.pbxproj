@@ -1,0 +1,540 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		359B99CC245DE9AF00962099 /* GlobeISS WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 359B99CB245DE9AF00962099 /* GlobeISS WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		359B99D2245DE9AF00962099 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359B99D0245DE9AF00962099 /* Interface.storyboard */; };
+		359B99D4245DE9B000962099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359B99D3245DE9B000962099 /* Assets.xcassets */; };
+		359B99DB245DE9B000962099 /* GlobeISS WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 359B99DA245DE9B000962099 /* GlobeISS WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		359B99E0245DE9B000962099 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B99DF245DE9B000962099 /* InterfaceController.swift */; };
+		359B99E2245DE9B000962099 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B99E1245DE9B000962099 /* ExtensionDelegate.swift */; };
+		359B99E4245DE9B000962099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359B99E3245DE9B000962099 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		359B99CD245DE9AF00962099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359B99C1245DE9AF00962099 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 359B99CA245DE9AF00962099;
+			remoteInfo = "GlobeISS WatchKit App";
+		};
+		359B99DC245DE9B000962099 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359B99C1245DE9AF00962099 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 359B99D9245DE9B000962099;
+			remoteInfo = "GlobeISS WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		359B99EB245DE9B000962099 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				359B99DB245DE9B000962099 /* GlobeISS WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		359B99EF245DE9B000962099 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				359B99CC245DE9AF00962099 /* GlobeISS WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		359B99C7245DE9AF00962099 /* GlobeISS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobeISS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		359B99CB245DE9AF00962099 /* GlobeISS WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "GlobeISS WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		359B99D1245DE9AF00962099 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		359B99D3245DE9B000962099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		359B99D5245DE9B000962099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		359B99DA245DE9B000962099 /* GlobeISS WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "GlobeISS WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		359B99DF245DE9B000962099 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		359B99E1245DE9B000962099 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		359B99E3245DE9B000962099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		359B99E5245DE9B000962099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		359B99D7245DE9B000962099 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		359B99C0245DE9AF00962099 = {
+			isa = PBXGroup;
+			children = (
+				359B99CF245DE9AF00962099 /* GlobeISS WatchKit App */,
+				359B99DE245DE9B000962099 /* GlobeISS WatchKit Extension */,
+				359B99C8245DE9AF00962099 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		359B99C8245DE9AF00962099 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				359B99C7245DE9AF00962099 /* GlobeISS.app */,
+				359B99CB245DE9AF00962099 /* GlobeISS WatchKit App.app */,
+				359B99DA245DE9B000962099 /* GlobeISS WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		359B99CF245DE9AF00962099 /* GlobeISS WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				359B99D0245DE9AF00962099 /* Interface.storyboard */,
+				359B99D3245DE9B000962099 /* Assets.xcassets */,
+				359B99D5245DE9B000962099 /* Info.plist */,
+			);
+			path = "GlobeISS WatchKit App";
+			sourceTree = "<group>";
+		};
+		359B99DE245DE9B000962099 /* GlobeISS WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				359B99DF245DE9B000962099 /* InterfaceController.swift */,
+				359B99E1245DE9B000962099 /* ExtensionDelegate.swift */,
+				359B99E3245DE9B000962099 /* Assets.xcassets */,
+				359B99E5245DE9B000962099 /* Info.plist */,
+			);
+			path = "GlobeISS WatchKit Extension";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		359B99C6245DE9AF00962099 /* GlobeISS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 359B99F0245DE9B000962099 /* Build configuration list for PBXNativeTarget "GlobeISS" */;
+			buildPhases = (
+				359B99C5245DE9AF00962099 /* Resources */,
+				359B99EF245DE9B000962099 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				359B99CE245DE9AF00962099 /* PBXTargetDependency */,
+			);
+			name = GlobeISS;
+			productName = GlobeISS;
+			productReference = 359B99C7245DE9AF00962099 /* GlobeISS.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		359B99CA245DE9AF00962099 /* GlobeISS WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 359B99EC245DE9B000962099 /* Build configuration list for PBXNativeTarget "GlobeISS WatchKit App" */;
+			buildPhases = (
+				359B99C9245DE9AF00962099 /* Resources */,
+				359B99EB245DE9B000962099 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				359B99DD245DE9B000962099 /* PBXTargetDependency */,
+			);
+			name = "GlobeISS WatchKit App";
+			productName = "GlobeISS WatchKit App";
+			productReference = 359B99CB245DE9AF00962099 /* GlobeISS WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		359B99D9245DE9B000962099 /* GlobeISS WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 359B99E8245DE9B000962099 /* Build configuration list for PBXNativeTarget "GlobeISS WatchKit Extension" */;
+			buildPhases = (
+				359B99D6245DE9B000962099 /* Sources */,
+				359B99D7245DE9B000962099 /* Frameworks */,
+				359B99D8245DE9B000962099 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "GlobeISS WatchKit Extension";
+			productName = "GlobeISS WatchKit Extension";
+			productReference = 359B99DA245DE9B000962099 /* GlobeISS WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		359B99C1245DE9AF00962099 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = dylanmaryk;
+				TargetAttributes = {
+					359B99C6245DE9AF00962099 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					359B99CA245DE9AF00962099 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+					359B99D9245DE9B000962099 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 359B99C4245DE9AF00962099 /* Build configuration list for PBXProject "GlobeISS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 359B99C0245DE9AF00962099;
+			productRefGroup = 359B99C8245DE9AF00962099 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				359B99C6245DE9AF00962099 /* GlobeISS */,
+				359B99CA245DE9AF00962099 /* GlobeISS WatchKit App */,
+				359B99D9245DE9B000962099 /* GlobeISS WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		359B99C5245DE9AF00962099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		359B99C9245DE9AF00962099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				359B99D4245DE9B000962099 /* Assets.xcassets in Resources */,
+				359B99D2245DE9AF00962099 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		359B99D8245DE9B000962099 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				359B99E4245DE9B000962099 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		359B99D6245DE9B000962099 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				359B99E2245DE9B000962099 /* ExtensionDelegate.swift in Sources */,
+				359B99E0245DE9B000962099 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		359B99CE245DE9AF00962099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 359B99CA245DE9AF00962099 /* GlobeISS WatchKit App */;
+			targetProxy = 359B99CD245DE9AF00962099 /* PBXContainerItemProxy */;
+		};
+		359B99DD245DE9B000962099 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 359B99D9245DE9B000962099 /* GlobeISS WatchKit Extension */;
+			targetProxy = 359B99DC245DE9B000962099 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		359B99D0245DE9AF00962099 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				359B99D1245DE9AF00962099 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		359B99E6245DE9B000962099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		359B99E7245DE9B000962099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		359B99E9245DE9B000962099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GlobeISS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dylanmaryk.GlobeISS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		359B99EA245DE9B000962099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "GlobeISS WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.dylanmaryk.GlobeISS.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		359B99ED245DE9B000962099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = GlobeISS_WatchKit_Extension;
+				INFOPLIST_FILE = "GlobeISS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.dylanmaryk.GlobeISS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Debug;
+		};
+		359B99EE245DE9B000962099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				IBSC_MODULE = GlobeISS_WatchKit_Extension;
+				INFOPLIST_FILE = "GlobeISS WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = io.dylanmaryk.GlobeISS.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.2;
+			};
+			name = Release;
+		};
+		359B99F1245DE9B000962099 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dylanmaryk.GlobeISS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		359B99F2245DE9B000962099 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = io.dylanmaryk.GlobeISS;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		359B99C4245DE9AF00962099 /* Build configuration list for PBXProject "GlobeISS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				359B99E6245DE9B000962099 /* Debug */,
+				359B99E7245DE9B000962099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		359B99E8245DE9B000962099 /* Build configuration list for PBXNativeTarget "GlobeISS WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				359B99E9245DE9B000962099 /* Debug */,
+				359B99EA245DE9B000962099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		359B99EC245DE9B000962099 /* Build configuration list for PBXNativeTarget "GlobeISS WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				359B99ED245DE9B000962099 /* Debug */,
+				359B99EE245DE9B000962099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		359B99F0245DE9B000962099 /* Build configuration list for PBXNativeTarget "GlobeISS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				359B99F1245DE9B000962099 /* Debug */,
+				359B99F2245DE9B000962099 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 359B99C1245DE9AF00962099 /* Project object */;
+}
