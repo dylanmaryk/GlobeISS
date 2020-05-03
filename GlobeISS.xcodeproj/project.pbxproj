@@ -14,6 +14,7 @@
 		359B99E0245DE9B000962099 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B99DF245DE9B000962099 /* InterfaceController.swift */; };
 		359B99E2245DE9B000962099 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B99E1245DE9B000962099 /* ExtensionDelegate.swift */; };
 		359B99E4245DE9B000962099 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359B99E3245DE9B000962099 /* Assets.xcassets */; };
+		359B99F4245F28E500962099 /* PositionResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359B99F3245F28E500962099 /* PositionResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +70,7 @@
 		359B99E1245DE9B000962099 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		359B99E3245DE9B000962099 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		359B99E5245DE9B000962099 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		359B99F3245F28E500962099 /* PositionResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PositionResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,6 +120,7 @@
 				359B99E1245DE9B000962099 /* ExtensionDelegate.swift */,
 				359B99E5245DE9B000962099 /* Info.plist */,
 				359B99DF245DE9B000962099 /* InterfaceController.swift */,
+				359B99F3245F28E500962099 /* PositionResponse.swift */,
 			);
 			path = "GlobeISS WatchKit Extension";
 			sourceTree = "<group>";
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359B99E2245DE9B000962099 /* ExtensionDelegate.swift in Sources */,
+				359B99F4245F28E500962099 /* PositionResponse.swift in Sources */,
 				359B99E0245DE9B000962099 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
