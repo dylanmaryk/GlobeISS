@@ -123,6 +123,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         
         let sphereNode = SCNNode(geometry: sphere)
         sphereNode.position = SCNVector3(0, 0, 0)
+        sphereNode.eulerAngles = SCNVector3Make(.pi / 2, 0, .pi / 2)
         
         return sphereNode
     }
