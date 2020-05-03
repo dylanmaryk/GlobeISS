@@ -14,6 +14,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     @IBOutlet private weak var sceneView: WKInterfaceSCNScene!
     
     private var timerCancellable: AnyCancellable?
+    private var globeSnapshotSessionCancellable: AnyCancellable?
     private var issPositionSessionCancellable: AnyCancellable?
     
     private lazy var scene: SCNScene = {
@@ -42,6 +43,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         super.awake(withContext: context)
         
         self.createTimer()
+        self.retrieveGlobeSnapshot()
         self.retrieveIssPosition()
         
         self.sceneView.scene = self.scene
@@ -86,6 +88,25 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         }
     }
     
+    private func retrieveGlobeSnapshot() {
+        self.globeSnapshotSessionCancellable = self.session
+            .dataTaskPublisher(for: URL(string: "https://wvs.earthdata.nasa.gov/api/v1/snapshot?REQUEST=GetSnapshot&LAYERS=VIIRS_SNPP_CorrectedReflectance_TrueColor&CRS=EPSG:4326&TIME=-P1D&WRAP=DAY&BBOX=-90,-180,90,180&FORMAT=image/jpeg&WIDTH=4096&HEIGHT=2048&AUTOSCALE=TRUE&ts=\(Date().timeIntervalSince1970)")!)
+            .map { UIImage(data: $0.data) }
+            .receive(on: DispatchQueue.main)
+            .sink(receiveCompletion: { [unowned self] completion in
+                switch completion {
+                case .finished:
+                    break
+                case .failure(let error):
+                    break // TODO: Show error
+                }
+                }, receiveValue: { [unowned self] image in
+                    let material = SCNMaterial()
+                    material.diffuse.contents = image
+                    self.globeNode.geometry?.firstMaterial = material
+            })
+    }
+    
     private func retrieveIssPosition() {
         self.issPositionSessionCancellable?.cancel()
         self.issPositionSessionCancellable = self.session
@@ -116,11 +137,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     }
     
     private func createGlobeNode() -> SCNNode {
-        let material = SCNMaterial()
-        material.diffuse.contents = UIImage(named: "snapshot-2020-05-1")
-        
         let sphere = SCNSphere(radius: 0.2)
-        sphere.firstMaterial = material
         
         let sphereNode = SCNNode(geometry: sphere)
         sphereNode.position = SCNVector3(0, 0, 0)
