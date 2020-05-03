@@ -14,7 +14,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
     @IBOutlet private weak var sceneView: WKInterfaceSCNScene!
     
     private var timerCancellable: AnyCancellable?
-    private var sessionCancellable: AnyCancellable?
+    private var issPositionSessionCancellable: AnyCancellable?
     
     private lazy var scene: SCNScene = {
         let scene = SCNScene()
@@ -42,7 +42,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         super.awake(withContext: context)
         
         self.createTimer()
-        self.retrievePosition()
+        self.retrieveIssPosition()
         
         self.sceneView.scene = self.scene
         
@@ -82,13 +82,13 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
         self.timerCancellable = Timer.publish(every: 5, on: .main, in: .common)
             .autoconnect()
             .sink { [unowned self] _ in
-                self.retrievePosition()
-            }
+                self.retrieveIssPosition()
+        }
     }
     
-    private func retrievePosition() {
-        self.sessionCancellable?.cancel()
-        self.sessionCancellable = self.session
+    private func retrieveIssPosition() {
+        self.issPositionSessionCancellable?.cancel()
+        self.issPositionSessionCancellable = self.session
             .dataTaskPublisher(for: URL(string: "http://api.open-notify.org/iss-now.json")!)
             .map { $0.data }
             .decode(type: PositionResponse.self, decoder: self.decoder)
@@ -106,6 +106,7 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
                             // TODO: Show error
                             return
                     }
+                    
                     let latRadians = lat * .pi / 180
                     let lngRadians = lng * .pi / 180
                     self.issNode.position = SCNVector3(0.25 * cos(latRadians) * cos(lngRadians),
