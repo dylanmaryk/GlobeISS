@@ -98,12 +98,15 @@ class InterfaceController: WKInterfaceController, WKCrownDelegate {
                 case .finished:
                     break
                 case .failure(let error):
-                    break // TODO: Show error
+                    self.presentAlert(withTitle: "Could not retrieve ISS positon",
+                                      message: error.localizedDescription,
+                                      preferredStyle: .alert,
+                                      actions: [WKAlertAction(title: "OK", style: .default, handler: {})])
                 }
                 }, receiveValue: { [unowned self] positionResponse in
                     guard let lat = Float(positionResponse.issPosition.latitude),
                         let lng = Float(positionResponse.issPosition.longitude) else {
-                            // TODO: Show error
+                            assertionFailure("Invalid coordinates")
                             return
                     }
                     
